@@ -31,8 +31,9 @@
             this.btnAddStudent = new System.Windows.Forms.Button();
             this.btnViewStudent = new System.Windows.Forms.Button();
             this.btnManageStudents = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.pnlNav = new System.Windows.Forms.Panel();
+            this.btnAddModule = new System.Windows.Forms.Button();
+            this.btnMangeModules = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlNav.SuspendLayout();
             this.SuspendLayout();
@@ -40,7 +41,7 @@
             // btnAddStudent
             // 
             this.btnAddStudent.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAddStudent.Location = new System.Drawing.Point(18, 146);
+            this.btnAddStudent.Location = new System.Drawing.Point(18, 217);
             this.btnAddStudent.Name = "btnAddStudent";
             this.btnAddStudent.Size = new System.Drawing.Size(176, 53);
             this.btnAddStudent.TabIndex = 0;
@@ -51,18 +52,18 @@
             // btnViewStudent
             // 
             this.btnViewStudent.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnViewStudent.Location = new System.Drawing.Point(18, 205);
+            this.btnViewStudent.Location = new System.Drawing.Point(18, 129);
             this.btnViewStudent.Name = "btnViewStudent";
             this.btnViewStudent.Size = new System.Drawing.Size(176, 53);
             this.btnViewStudent.TabIndex = 1;
-            this.btnViewStudent.Text = "View students";
+            this.btnViewStudent.Text = "View Students & Modules";
             this.btnViewStudent.UseVisualStyleBackColor = false;
             this.btnViewStudent.Click += new System.EventHandler(this.btnViewStudent_Click);
             // 
             // btnManageStudents
             // 
             this.btnManageStudents.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnManageStudents.Location = new System.Drawing.Point(18, 264);
+            this.btnManageStudents.Location = new System.Drawing.Point(18, 276);
             this.btnManageStudents.Name = "btnManageStudents";
             this.btnManageStudents.Size = new System.Drawing.Size(176, 53);
             this.btnManageStudents.TabIndex = 0;
@@ -70,27 +71,40 @@
             this.btnManageStudents.UseVisualStyleBackColor = false;
             this.btnManageStudents.Click += new System.EventHandler(this.btnManageStudents_Click);
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button4.Location = new System.Drawing.Point(18, 323);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 53);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "button2";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // pnlNav
             // 
-            this.pnlNav.BackColor = System.Drawing.Color.LightGreen;
+            this.pnlNav.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlNav.Controls.Add(this.btnAddModule);
+            this.pnlNav.Controls.Add(this.btnMangeModules);
             this.pnlNav.Controls.Add(this.btnViewStudent);
-            this.pnlNav.Controls.Add(this.button4);
             this.pnlNav.Controls.Add(this.btnAddStudent);
             this.pnlNav.Controls.Add(this.btnManageStudents);
             this.pnlNav.Location = new System.Drawing.Point(-6, -8);
             this.pnlNav.Name = "pnlNav";
             this.pnlNav.Size = new System.Drawing.Size(213, 675);
             this.pnlNav.TabIndex = 2;
+            // 
+            // btnAddModule
+            // 
+            this.btnAddModule.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAddModule.Location = new System.Drawing.Point(18, 376);
+            this.btnAddModule.Name = "btnAddModule";
+            this.btnAddModule.Size = new System.Drawing.Size(176, 53);
+            this.btnAddModule.TabIndex = 2;
+            this.btnAddModule.Text = "Add Module";
+            this.btnAddModule.UseVisualStyleBackColor = false;
+            this.btnAddModule.Click += new System.EventHandler(this.btnAddModule_Click);
+            // 
+            // btnMangeModules
+            // 
+            this.btnMangeModules.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMangeModules.Location = new System.Drawing.Point(18, 435);
+            this.btnMangeModules.Name = "btnMangeModules";
+            this.btnMangeModules.Size = new System.Drawing.Size(176, 53);
+            this.btnMangeModules.TabIndex = 3;
+            this.btnMangeModules.Text = "Manage Modules";
+            this.btnMangeModules.UseVisualStyleBackColor = false;
+            this.btnMangeModules.Click += new System.EventHandler(this.btnMangeModules_Click);
             // 
             // pnlMain
             // 
@@ -119,8 +133,9 @@
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Button btnViewStudent;
         private System.Windows.Forms.Button btnManageStudents;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.Button btnAddModule;
+        private System.Windows.Forms.Button btnMangeModules;
     }
 }

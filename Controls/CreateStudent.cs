@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Project_PRG_282.Controls
 {
-    public partial class NewStudent : UserControl
+    public partial class CreateStudent : UserControl
     {
-        public NewStudent()
+        public CreateStudent()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

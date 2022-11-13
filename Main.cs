@@ -13,8 +13,10 @@ namespace Project_PRG_282
     public partial class Main : Form
     {
         Controls.ManageStudent ucManageStudent = new Controls.ManageStudent();
-        Controls.NewStudent ucNewStudent = new Controls.NewStudent();
+        Controls.CreateStudent ucNewStudent = new Controls.CreateStudent();
         Controls.ViewStudent ucViewStudent = new Controls.ViewStudent();
+        Controls.AddModule ucAddModule = new Controls.AddModule();
+        Controls.ManageModules ucManageModule = new Controls.ManageModules();
 
         public Main()
         {
@@ -23,7 +25,13 @@ namespace Project_PRG_282
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+           
+            
+            
+            
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(ucViewStudent);
+            ucViewStudent.Dock = DockStyle.Fill;
         }
 
         private void btnAddStudent_Click(object sender, EventArgs e)
@@ -44,6 +52,30 @@ namespace Project_PRG_282
         {
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(ucManageStudent);
+            ucManageStudent.Dock = DockStyle.Fill;
+        }
+
+        private void btnUpdateStudent_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnViewModule_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddModule_Click(object sender, EventArgs e)
+        {
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(ucAddModule);
+            ucManageStudent.Dock = DockStyle.Fill;
+        }
+
+        private void btnMangeModules_Click(object sender, EventArgs e)
+        {
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(ucManageModule);
             ucManageStudent.Dock = DockStyle.Fill;
         }
     }

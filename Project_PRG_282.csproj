@@ -46,17 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\AddModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AddModule.Designer.cs">
+      <DependentUpon>AddModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CreateStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CreateStudent.Designer.cs">
+      <DependentUpon>CreateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ManageModules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ManageModules.Designer.cs">
+      <DependentUpon>ManageModules.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ManageStudent.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\ManageStudent.Designer.cs">
       <DependentUpon>ManageStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\NewStudent.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\NewStudent.Designer.cs">
-      <DependentUpon>NewStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ViewStudent.cs">
       <SubType>UserControl</SubType>
@@ -78,11 +90,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\AddModule.resx">
+      <DependentUpon>AddModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CreateStudent.resx">
+      <DependentUpon>CreateStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ManageModules.resx">
+      <DependentUpon>ManageModules.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ManageStudent.resx">
       <DependentUpon>ManageStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\NewStudent.resx">
-      <DependentUpon>NewStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ViewStudent.resx">
       <DependentUpon>ViewStudent.cs</DependentUpon>
