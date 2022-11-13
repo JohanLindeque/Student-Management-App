@@ -58,6 +58,12 @@
     <Compile Include="Controls\CreateStudent.Designer.cs">
       <DependentUpon>CreateStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\UserLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ManageModules.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="Controls\ManageStudent.Designer.cs">
       <DependentUpon>ManageStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ViewStudent.cs">
       <SubType>UserControl</SubType>
@@ -101,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ManageStudent.resx">
       <DependentUpon>ManageStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ViewStudent.resx">
       <DependentUpon>ViewStudent.cs</DependentUpon>

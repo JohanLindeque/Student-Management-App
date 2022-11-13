@@ -78,5 +78,14 @@ namespace Project_PRG_282
             pnlMain.Controls.Add(ucManageModule);
             ucManageStudent.Dock = DockStyle.Fill;
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            // This code hides the current Main form  and shows the login form to the user.
+            this.Hide();
+            Login f1 = new Login();
+            f1.ShowDialog();
+            this.Close();
+        }
     }
 }

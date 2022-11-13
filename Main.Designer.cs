@@ -35,6 +35,7 @@
             this.btnAddModule = new System.Windows.Forms.Button();
             this.btnMangeModules = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.pnlNav.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +75,7 @@
             // pnlNav
             // 
             this.pnlNav.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlNav.Controls.Add(this.btnLogOut);
             this.pnlNav.Controls.Add(this.btnAddModule);
             this.pnlNav.Controls.Add(this.btnMangeModules);
             this.pnlNav.Controls.Add(this.btnViewStudent);
@@ -113,6 +115,16 @@
             this.pnlMain.Size = new System.Drawing.Size(1113, 667);
             this.pnlMain.TabIndex = 3;
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Location = new System.Drawing.Point(18, 577);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(176, 50);
+            this.btnLogOut.TabIndex = 4;
+            this.btnLogOut.Text = "LogOut";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -137,5 +149,6 @@
         private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.Button btnAddModule;
         private System.Windows.Forms.Button btnMangeModules;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }
