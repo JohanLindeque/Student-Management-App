@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_PRG_282
 {
@@ -39,6 +40,12 @@ namespace Project_PRG_282
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(ucNewStudent);
             ucNewStudent.Dock = DockStyle.Fill;
+
+            SqlCommand addStudent;
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            String sql = "";
+
+            //sql = "Insert Into Student (StudentNumber, Name, Surname, DOB, Gender, Phone, Address) values ()"
         }
 
         private void btnViewStudent_Click(object sender, EventArgs e)

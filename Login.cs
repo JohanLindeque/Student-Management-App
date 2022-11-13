@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_PRG_282
 {
@@ -58,6 +59,19 @@ namespace Project_PRG_282
 
         private void btnMain_Click(object sender, EventArgs e)
         {
+            //This temporary code will create the connection to the database
+            string connectionStr;
+            SqlConnection con;
+
+            connectionStr = @"Server=NATHEN-PC\SQLEXPRESS ; Initial Catalog= PRG281Project; Integrated Security=SSPI";
+
+            con = new SqlConnection(connectionStr);
+
+            con.Open();
+            MessageBox.Show("Connection Open");
+            con.Close();
+
+
             // This code hides the current login form and shows the Main form to the user.
             this.Hide();
             Main f2 = new Main();
