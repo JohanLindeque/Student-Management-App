@@ -18,8 +18,8 @@ namespace Project_PRG_282
         public void switchForm()
         {
             this.Hide();
-            UserSignUp f2 = new UserSignUp();
-            f2.ShowDialog();
+            UserSignUp f3 = new UserSignUp();
+            f3.ShowDialog();
             this.Close();
         }
 
@@ -37,19 +37,21 @@ namespace Project_PRG_282
             {
                 if (Filehandler.myusers.Contains(User))
                 {
-                    MessageBox.Show("Welcome!");
+                   
                     // This code hides the current login form and shows the Main form to the user.
                     this.Hide();
                     Main f2 = new Main();
                     f2.ShowDialog();
                     this.Close();
+                    break;
                 }
                 else
                 {
                     MessageBox.Show("User does not exist!");
                     switchForm();
+                    break;
                 }
-
+                
             }
 
         }

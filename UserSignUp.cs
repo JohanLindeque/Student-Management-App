@@ -22,13 +22,16 @@ namespace Project_PRG_282
                 if (Filehandler.myusers.Contains(User))
                 {
                     MessageBox.Show("User already exist!");
-                    
+                    break;
+
                 }
                 else
                 {
-                    MessageBox.Show("User created!");
                     Filehandler.WritUser(User);
+                    MessageBox.Show("User created!");
                     switchForm();
+                    
+                    break;
                 }
             }
         }
@@ -43,8 +46,8 @@ namespace Project_PRG_282
         public void switchForm()
         {
             this.Hide();
-            Login f2 = new Login();
-            f2.ShowDialog();
+            Login f1 = new Login();
+            f1.ShowDialog();
             this.Close();
         }
 
