@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace Project_PRG_282.Controls
 
         public void search()
         {
-            handler.GetStudents(int.Parse(txbSearchModule.Text));
+            handler.GetModules(txbSearchModule.Text);
             dgvManageModule.DataSource = handler.bs;
             clearInput();
         }
@@ -56,7 +57,16 @@ namespace Project_PRG_282.Controls
 
         private void dgvManageModule_SelectionChanged(object sender, EventArgs e)
         {
+            DbDataRecord dr = handler.bs.Current as DbDataRecord;
 
+            if(dr != null)
+            {
+                txbModuleCode.Text = dr[0].ToString();
+                txbModuleName.Text = dr[1].ToString();
+                txbModuleLink.Text = dr[2].ToString();
+                rtbModDesc.Text = dr[0].ToString();
+
+            }
         }
 
        

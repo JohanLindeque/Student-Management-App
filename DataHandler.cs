@@ -279,13 +279,16 @@ namespace Project_PRG_282
             modules = new List<string>();
             try
             {
-
-                conn.Open();
                 cmd = new SqlCommand("GetStudentModulesByStudent", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@StudentNumber", ID);
+                conn.Open();
                 reader = cmd.ExecuteReader();
-                bs.DataSource = reader;
+                if (reader.HasRows)
+                {
+                    bs.DataSource = reader;
+
+                }
                 reader.Close();
                 string number1 = "";
                 string number2 = "";
@@ -305,7 +308,6 @@ namespace Project_PRG_282
                 }
                 students.Add(number2);
                 modules.Add(string.Join(",", strings));
-                MessageBox.Show("Modules has been found");
             }
             catch (Exception ex)
             {

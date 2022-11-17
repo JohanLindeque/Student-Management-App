@@ -6,6 +6,7 @@ using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,6 +29,8 @@ namespace Project_PRG_282.Controls
             txbStuName.Clear();
             txbStuPhone.Clear();
             txbStuSurname.Clear();
+            lbxModules.Items.Clear();
+            modules.Clear();
         }
 
         private void ManageStudent_Load(object sender, EventArgs e)
@@ -66,6 +69,18 @@ namespace Project_PRG_282.Controls
                 cbxGender.Text = dr[5].ToString();
                 txbStuPhone.Text = dr[6].ToString();
                 txbStuAddress.Text = dr[7].ToString();
+            }
+
+            dh.GetStudentModules(int.Parse(txbStuID.Text));
+
+            foreach (DbDataRecord datarow in dh.bs)
+            {            
+                modules.Add(datarow[1].ToString());
+            }
+            lbxModules.Items.Clear();
+            foreach (var item in modules)
+            {
+                lbxModules.Items.Add(item);
             }
         }
         public bool Check()

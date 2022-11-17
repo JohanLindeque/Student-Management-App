@@ -69,10 +69,10 @@ namespace Project_PRG_282.Controls
                 cbxNodules.Items.Add(dr[0]);
             }
             txbStuID.Text = handler.GetLastStudentNumber();
-            cbxGender.SelectedIndex = 0;
             cbxGender.Items.Add("Male");
             cbxGender.Items.Add("Female");
             cbxGender.Items.Add("Other");
+            cbxGender.SelectedIndex = 0;
         }
 
         private void btnAddMod_Click(object sender, EventArgs e)
