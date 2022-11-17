@@ -12,7 +12,7 @@ namespace Project_PRG_282.Controls
 {
     public partial class ViewStudent : UserControl
     {
-        
+        DataHandler dh;
 
         public ViewStudent()
         {
@@ -21,7 +21,10 @@ namespace Project_PRG_282.Controls
 
         private void ViewStudent_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = 
+            dh.GetStudents();
+            dgvStudents.DataSource = dh.bs;
+            dh.GetModules();
+            dataGridView1.DataSource = dh.bs;
         }
     }
 }

@@ -11,20 +11,18 @@ namespace Project_PRG_282
     internal class Filehandler
     {
         static string thePath = @"../users.txt";
-        public static string[] myusers;
-        FileStream fs;
-        StreamWriter sw;
         StreamReader sr;
+        public static string[] myusers;
         
         public static void WritUser(string newUser)
         {
             try
             {
-                using(fs = new FileStream(thePath, FileMode.Append, FileAccess.Write))
+                using(FileStream fs = new FileStream(thePath, FileMode.Append, FileAccess.Write))
                 {
-                    using(sw = new StreamWriter(fs))
+                    using(StreamWriter sw = new StreamWriter(fs))
                     {
-                        sw.WriteLine(newUser)
+                        sw.WriteLine(newUser);
                     }
                 }
 
