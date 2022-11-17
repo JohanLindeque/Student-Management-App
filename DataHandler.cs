@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project_practice
+namespace Project_PRG_282
 {
     internal class DataHandler
     {
