@@ -12,7 +12,7 @@ namespace Project_PRG_282.Controls
 {
     public partial class ViewStudent : UserControl
     {
-        DataHandler dh;
+        DataHandler dh = new DataHandler();
 
         public ViewStudent()
         {
