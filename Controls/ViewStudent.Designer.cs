@@ -58,7 +58,7 @@
             this.lblNewS.Size = new System.Drawing.Size(496, 46);
             this.lblNewS.TabIndex = 0;
             this.lblNewS.Text = "All Students and Modules";
-            this.lblNewS.Click += new System.EventHandler(this.lblNewS_Click);
+            
             // 
             // dgvStudents
             // 
@@ -69,6 +69,7 @@
             this.dgvStudents.RowTemplate.Height = 24;
             this.dgvStudents.Size = new System.Drawing.Size(1042, 273);
             this.dgvStudents.TabIndex = 3;
+            
             // 
             // label1
             // 
@@ -109,6 +110,7 @@
             this.Controls.Add(this.pnlViewTop);
             this.Name = "ViewStudent";
             this.Size = new System.Drawing.Size(1113, 667);
+            this.Load += new System.EventHandler(this.ViewStudent_Load);
             this.pnlViewTop.ResumeLayout(false);
             this.pnlViewTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();

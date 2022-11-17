@@ -16,5 +16,15 @@ namespace Project_PRG_282.Controls
         {
             InitializeComponent();
         }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateStudent_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

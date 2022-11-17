@@ -55,15 +55,7 @@ namespace Project_PRG_282
             ucManageStudent.Dock = DockStyle.Fill;
         }
 
-        private void btnUpdateStudent_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnViewModule_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnAddModule_Click(object sender, EventArgs e)
         {

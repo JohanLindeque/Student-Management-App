@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.pnlManageContainer = new System.Windows.Forms.Panel();
+            this.rtbModDesc = new System.Windows.Forms.RichTextBox();
+            this.lblModuleDescription = new System.Windows.Forms.Label();
+            this.txbModuleCode = new System.Windows.Forms.TextBox();
+            this.lblModuleCode = new System.Windows.Forms.Label();
+            this.txbModuleLink = new System.Windows.Forms.TextBox();
+            this.txbModuleName = new System.Windows.Forms.TextBox();
+            this.lblModuleResource = new System.Windows.Forms.Label();
+            this.lblModuleName = new System.Windows.Forms.Label();
             this.dgvManageModule = new System.Windows.Forms.DataGridView();
             this.btnUpdateM = new System.Windows.Forms.Button();
             this.btnDeleteM = new System.Windows.Forms.Button();
@@ -37,14 +45,6 @@
             this.lblSearchM = new System.Windows.Forms.Label();
             this.pnlManageMTop = new System.Windows.Forms.Panel();
             this.lblManageM = new System.Windows.Forms.Label();
-            this.txbModuleCode = new System.Windows.Forms.TextBox();
-            this.lblModuleCode = new System.Windows.Forms.Label();
-            this.txbModuleLink = new System.Windows.Forms.TextBox();
-            this.txbModuleName = new System.Windows.Forms.TextBox();
-            this.lblModuleResource = new System.Windows.Forms.Label();
-            this.lblModuleName = new System.Windows.Forms.Label();
-            this.lblModuleDescription = new System.Windows.Forms.Label();
-            this.rtbModDEsc = new System.Windows.Forms.RichTextBox();
             this.pnlManageContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageModule)).BeginInit();
             this.pnlManageMTop.SuspendLayout();
@@ -52,7 +52,7 @@
             // 
             // pnlManageContainer
             // 
-            this.pnlManageContainer.Controls.Add(this.rtbModDEsc);
+            this.pnlManageContainer.Controls.Add(this.rtbModDesc);
             this.pnlManageContainer.Controls.Add(this.lblModuleDescription);
             this.pnlManageContainer.Controls.Add(this.txbModuleCode);
             this.pnlManageContainer.Controls.Add(this.lblModuleCode);
@@ -69,81 +69,26 @@
             this.pnlManageContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlManageContainer.Location = new System.Drawing.Point(0, 100);
             this.pnlManageContainer.Name = "pnlManageContainer";
-            this.pnlManageContainer.Size = new System.Drawing.Size(1113, 567);
+            this.pnlManageContainer.Size = new System.Drawing.Size(1113, 576);
             this.pnlManageContainer.TabIndex = 6;
+            
             // 
-            // dgvManageModule
+            // rtbModDesc
             // 
-            this.dgvManageModule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvManageModule.Location = new System.Drawing.Point(304, 46);
-            this.dgvManageModule.Name = "dgvManageModule";
-            this.dgvManageModule.RowHeadersWidth = 51;
-            this.dgvManageModule.RowTemplate.Height = 24;
-            this.dgvManageModule.Size = new System.Drawing.Size(390, 447);
-            this.dgvManageModule.TabIndex = 14;
+            this.rtbModDesc.Location = new System.Drawing.Point(842, 195);
+            this.rtbModDesc.Name = "rtbModDesc";
+            this.rtbModDesc.Size = new System.Drawing.Size(193, 181);
+            this.rtbModDesc.TabIndex = 40;
+            this.rtbModDesc.Text = "";
             // 
-            // btnUpdateM
+            // lblModuleDescription
             // 
-            this.btnUpdateM.Location = new System.Drawing.Point(926, 424);
-            this.btnUpdateM.Name = "btnUpdateM";
-            this.btnUpdateM.Size = new System.Drawing.Size(120, 53);
-            this.btnUpdateM.TabIndex = 13;
-            this.btnUpdateM.Text = "Update Module";
-            this.btnUpdateM.UseVisualStyleBackColor = true;
-            // 
-            // btnDeleteM
-            // 
-            this.btnDeleteM.Location = new System.Drawing.Point(780, 424);
-            this.btnDeleteM.Name = "btnDeleteM";
-            this.btnDeleteM.Size = new System.Drawing.Size(115, 53);
-            this.btnDeleteM.TabIndex = 13;
-            this.btnDeleteM.Text = "Delete Module";
-            this.btnDeleteM.UseVisualStyleBackColor = true;
-            // 
-            // btnSearchModule
-            // 
-            this.btnSearchModule.Location = new System.Drawing.Point(87, 120);
-            this.btnSearchModule.Name = "btnSearchModule";
-            this.btnSearchModule.Size = new System.Drawing.Size(97, 23);
-            this.btnSearchModule.TabIndex = 11;
-            this.btnSearchModule.Text = "Search";
-            this.btnSearchModule.UseVisualStyleBackColor = true;
-            // 
-            // txbSearchModule
-            // 
-            this.txbSearchModule.Location = new System.Drawing.Point(39, 72);
-            this.txbSearchModule.Name = "txbSearchModule";
-            this.txbSearchModule.Size = new System.Drawing.Size(192, 22);
-            this.txbSearchModule.TabIndex = 10;
-            // 
-            // lblSearchM
-            // 
-            this.lblSearchM.AutoSize = true;
-            this.lblSearchM.Location = new System.Drawing.Point(36, 40);
-            this.lblSearchM.Name = "lblSearchM";
-            this.lblSearchM.Size = new System.Drawing.Size(152, 16);
-            this.lblSearchM.TabIndex = 9;
-            this.lblSearchM.Text = "Search by Module Code";
-            // 
-            // pnlManageMTop
-            // 
-            this.pnlManageMTop.BackColor = System.Drawing.Color.MediumPurple;
-            this.pnlManageMTop.Controls.Add(this.lblManageM);
-            this.pnlManageMTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlManageMTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlManageMTop.Name = "pnlManageMTop";
-            this.pnlManageMTop.Size = new System.Drawing.Size(1113, 100);
-            this.pnlManageMTop.TabIndex = 5;
-            // 
-            // lblManageM
-            // 
-            this.lblManageM.AutoSize = true;
-            this.lblManageM.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManageM.Location = new System.Drawing.Point(12, 25);
-            this.lblManageM.Name = "lblManageM";
-            this.lblManageM.Size = new System.Drawing.Size(339, 46);
-            this.lblManageM.TabIndex = 0;
-            this.lblManageM.Text = "Manage modules";
+            this.lblModuleDescription.AutoSize = true;
+            this.lblModuleDescription.Location = new System.Drawing.Point(735, 195);
+            this.lblModuleDescription.Name = "lblModuleDescription";
+            this.lblModuleDescription.Size = new System.Drawing.Size(75, 16);
+            this.lblModuleDescription.TabIndex = 39;
+            this.lblModuleDescription.Text = "Description";
             // 
             // txbModuleCode
             // 
@@ -193,22 +138,80 @@
             this.lblModuleName.TabIndex = 35;
             this.lblModuleName.Text = "Name";
             // 
-            // lblModuleDescription
+            // dgvManageModule
             // 
-            this.lblModuleDescription.AutoSize = true;
-            this.lblModuleDescription.Location = new System.Drawing.Point(735, 195);
-            this.lblModuleDescription.Name = "lblModuleDescription";
-            this.lblModuleDescription.Size = new System.Drawing.Size(75, 16);
-            this.lblModuleDescription.TabIndex = 39;
-            this.lblModuleDescription.Text = "Description";
+            this.dgvManageModule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvManageModule.Location = new System.Drawing.Point(304, 46);
+            this.dgvManageModule.Name = "dgvManageModule";
+            this.dgvManageModule.RowHeadersWidth = 51;
+            this.dgvManageModule.RowTemplate.Height = 24;
+            this.dgvManageModule.Size = new System.Drawing.Size(390, 447);
+            this.dgvManageModule.TabIndex = 14;
+            this.dgvManageModule.SelectionChanged += new System.EventHandler(this.dgvManageModule_SelectionChanged);
             // 
-            // rtbModDEsc
+            // btnUpdateM
             // 
-            this.rtbModDEsc.Location = new System.Drawing.Point(842, 195);
-            this.rtbModDEsc.Name = "rtbModDEsc";
-            this.rtbModDEsc.Size = new System.Drawing.Size(193, 181);
-            this.rtbModDEsc.TabIndex = 40;
-            this.rtbModDEsc.Text = "";
+            this.btnUpdateM.Location = new System.Drawing.Point(926, 424);
+            this.btnUpdateM.Name = "btnUpdateM";
+            this.btnUpdateM.Size = new System.Drawing.Size(120, 53);
+            this.btnUpdateM.TabIndex = 13;
+            this.btnUpdateM.Text = "Update Module";
+            this.btnUpdateM.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteM
+            // 
+            this.btnDeleteM.Location = new System.Drawing.Point(780, 424);
+            this.btnDeleteM.Name = "btnDeleteM";
+            this.btnDeleteM.Size = new System.Drawing.Size(115, 53);
+            this.btnDeleteM.TabIndex = 13;
+            this.btnDeleteM.Text = "Delete Module";
+            this.btnDeleteM.UseVisualStyleBackColor = true;
+            // 
+            // btnSearchModule
+            // 
+            this.btnSearchModule.Location = new System.Drawing.Point(87, 120);
+            this.btnSearchModule.Name = "btnSearchModule";
+            this.btnSearchModule.Size = new System.Drawing.Size(97, 23);
+            this.btnSearchModule.TabIndex = 11;
+            this.btnSearchModule.Text = "Search";
+            this.btnSearchModule.UseVisualStyleBackColor = true;
+            this.btnSearchModule.Click += new System.EventHandler(this.btnSearchModule_Click);
+            // 
+            // txbSearchModule
+            // 
+            this.txbSearchModule.Location = new System.Drawing.Point(39, 72);
+            this.txbSearchModule.Name = "txbSearchModule";
+            this.txbSearchModule.Size = new System.Drawing.Size(192, 22);
+            this.txbSearchModule.TabIndex = 10;
+            // 
+            // lblSearchM
+            // 
+            this.lblSearchM.AutoSize = true;
+            this.lblSearchM.Location = new System.Drawing.Point(36, 40);
+            this.lblSearchM.Name = "lblSearchM";
+            this.lblSearchM.Size = new System.Drawing.Size(152, 16);
+            this.lblSearchM.TabIndex = 9;
+            this.lblSearchM.Text = "Search by Module Code";
+            // 
+            // pnlManageMTop
+            // 
+            this.pnlManageMTop.BackColor = System.Drawing.Color.MediumPurple;
+            this.pnlManageMTop.Controls.Add(this.lblManageM);
+            this.pnlManageMTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlManageMTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlManageMTop.Name = "pnlManageMTop";
+            this.pnlManageMTop.Size = new System.Drawing.Size(1113, 100);
+            this.pnlManageMTop.TabIndex = 5;
+            // 
+            // lblManageM
+            // 
+            this.lblManageM.AutoSize = true;
+            this.lblManageM.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageM.Location = new System.Drawing.Point(12, 25);
+            this.lblManageM.Name = "lblManageM";
+            this.lblManageM.Size = new System.Drawing.Size(339, 46);
+            this.lblManageM.TabIndex = 0;
+            this.lblManageM.Text = "Manage modules";
             // 
             // ManageModules
             // 
@@ -217,7 +220,8 @@
             this.Controls.Add(this.pnlManageContainer);
             this.Controls.Add(this.pnlManageMTop);
             this.Name = "ManageModules";
-            this.Size = new System.Drawing.Size(1113, 667);
+            this.Size = new System.Drawing.Size(1113, 676);
+            this.Load += new System.EventHandler(this.ManageModules_Load);
             this.pnlManageContainer.ResumeLayout(false);
             this.pnlManageContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageModule)).EndInit();
@@ -244,7 +248,7 @@
         private System.Windows.Forms.TextBox txbModuleName;
         private System.Windows.Forms.Label lblModuleResource;
         private System.Windows.Forms.Label lblModuleName;
-        private System.Windows.Forms.RichTextBox rtbModDEsc;
+        private System.Windows.Forms.RichTextBox rtbModDesc;
         private System.Windows.Forms.Label lblModuleDescription;
     }
 }

@@ -29,5 +29,25 @@ namespace Project_PRG_282.Controls
         {
 
         }
+
+        private void dgvManageStudent_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchStudent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ManageStudent_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

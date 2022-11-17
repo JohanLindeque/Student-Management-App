@@ -76,6 +76,7 @@
             this.btnAddStudent.TabIndex = 20;
             this.btnAddStudent.Text = "Add Student";
             this.btnAddStudent.UseVisualStyleBackColor = true;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // cbxGender
             // 
@@ -212,6 +213,7 @@
             this.Controls.Add(this.pnlCreateTop);
             this.Name = "CreateStudent";
             this.Size = new System.Drawing.Size(1113, 667);
+            this.Load += new System.EventHandler(this.CreateStudent_Load);
             this.pnlCreateTop.ResumeLayout(false);
             this.pnlCreateTop.PerformLayout();
             this.ResumeLayout(false);

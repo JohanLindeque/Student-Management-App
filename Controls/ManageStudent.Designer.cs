@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.pnlManageContainer = new System.Windows.Forms.Panel();
-            this.dgvManageStudent = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cbxGender = new System.Windows.Forms.ComboBox();
+            this.lblStuName = new System.Windows.Forms.Label();
             this.btnUpdateS = new System.Windows.Forms.Button();
+            this.lblStuGender = new System.Windows.Forms.Label();
+            this.lblStuAddress = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txbStuName = new System.Windows.Forms.TextBox();
+            this.txbStuSurname = new System.Windows.Forms.TextBox();
+            this.txbStuAddress = new System.Windows.Forms.TextBox();
+            this.lblStuDOB = new System.Windows.Forms.Label();
+            this.lblStuID = new System.Windows.Forms.Label();
+            this.lblStuSurname = new System.Windows.Forms.Label();
+            this.lblStuPhone = new System.Windows.Forms.Label();
+            this.txbStuPhone = new System.Windows.Forms.TextBox();
+            this.txbStuID = new System.Windows.Forms.TextBox();
+            this.dgvManageStudent = new System.Windows.Forms.DataGridView();
             this.btnDeleteS = new System.Windows.Forms.Button();
             this.btnSearchStudent = new System.Windows.Forms.Button();
             this.txbSearchStudent = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblManageS = new System.Windows.Forms.Label();
             this.pnlManageTop = new System.Windows.Forms.Panel();
-            this.cbxGender = new System.Windows.Forms.ComboBox();
-            this.lblStuGender = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txbStuSurname = new System.Windows.Forms.TextBox();
-            this.lblStuDOB = new System.Windows.Forms.Label();
-            this.lblStuSurname = new System.Windows.Forms.Label();
-            this.txbStuPhone = new System.Windows.Forms.TextBox();
-            this.txbStuID = new System.Windows.Forms.TextBox();
-            this.lblStuPhone = new System.Windows.Forms.Label();
-            this.lblStuID = new System.Windows.Forms.Label();
-            this.txbStuAddress = new System.Windows.Forms.TextBox();
-            this.txbStuName = new System.Windows.Forms.TextBox();
-            this.lblStuAddress = new System.Windows.Forms.Label();
-            this.lblStuName = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlManageContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageStudent)).BeginInit();
             this.pnlManageTop.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlManageContainer
@@ -73,15 +73,44 @@
             this.pnlManageContainer.TabIndex = 4;
             this.pnlManageContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlManageContainer_Paint);
             // 
-            // dgvManageStudent
+            // panel1
             // 
-            this.dgvManageStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvManageStudent.Location = new System.Drawing.Point(304, 40);
-            this.dgvManageStudent.Name = "dgvManageStudent";
-            this.dgvManageStudent.RowHeadersWidth = 51;
-            this.dgvManageStudent.RowTemplate.Height = 24;
-            this.dgvManageStudent.Size = new System.Drawing.Size(771, 174);
-            this.dgvManageStudent.TabIndex = 14;
+            this.panel1.Controls.Add(this.cbxGender);
+            this.panel1.Controls.Add(this.lblStuName);
+            this.panel1.Controls.Add(this.btnUpdateS);
+            this.panel1.Controls.Add(this.lblStuGender);
+            this.panel1.Controls.Add(this.lblStuAddress);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.txbStuName);
+            this.panel1.Controls.Add(this.txbStuSurname);
+            this.panel1.Controls.Add(this.txbStuAddress);
+            this.panel1.Controls.Add(this.lblStuDOB);
+            this.panel1.Controls.Add(this.lblStuID);
+            this.panel1.Controls.Add(this.lblStuSurname);
+            this.panel1.Controls.Add(this.lblStuPhone);
+            this.panel1.Controls.Add(this.txbStuPhone);
+            this.panel1.Controls.Add(this.txbStuID);
+            this.panel1.Location = new System.Drawing.Point(20, 297);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1055, 237);
+            this.panel1.TabIndex = 50;
+            // 
+            // cbxGender
+            // 
+            this.cbxGender.FormattingEnabled = true;
+            this.cbxGender.Location = new System.Drawing.Point(526, 20);
+            this.cbxGender.Name = "cbxGender";
+            this.cbxGender.Size = new System.Drawing.Size(193, 24);
+            this.cbxGender.TabIndex = 49;
+            // 
+            // lblStuName
+            // 
+            this.lblStuName.AutoSize = true;
+            this.lblStuName.Location = new System.Drawing.Point(39, 61);
+            this.lblStuName.Name = "lblStuName";
+            this.lblStuName.Size = new System.Drawing.Size(44, 16);
+            this.lblStuName.TabIndex = 41;
+            this.lblStuName.Text = "Name";
             // 
             // btnUpdateS
             // 
@@ -93,6 +122,113 @@
             this.btnUpdateS.UseVisualStyleBackColor = true;
             this.btnUpdateS.Click += new System.EventHandler(this.btnUpdateS_Click);
             // 
+            // lblStuGender
+            // 
+            this.lblStuGender.AutoSize = true;
+            this.lblStuGender.Location = new System.Drawing.Point(416, 20);
+            this.lblStuGender.Name = "lblStuGender";
+            this.lblStuGender.Size = new System.Drawing.Size(52, 16);
+            this.lblStuGender.TabIndex = 48;
+            this.lblStuGender.Text = "Gender";
+            // 
+            // lblStuAddress
+            // 
+            this.lblStuAddress.AutoSize = true;
+            this.lblStuAddress.Location = new System.Drawing.Point(416, 112);
+            this.lblStuAddress.Name = "lblStuAddress";
+            this.lblStuAddress.Size = new System.Drawing.Size(58, 16);
+            this.lblStuAddress.TabIndex = 40;
+            this.lblStuAddress.Text = "Address";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(149, 139);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(193, 22);
+            this.dateTimePicker1.TabIndex = 47;
+            // 
+            // txbStuName
+            // 
+            this.txbStuName.Location = new System.Drawing.Point(149, 61);
+            this.txbStuName.Name = "txbStuName";
+            this.txbStuName.Size = new System.Drawing.Size(193, 22);
+            this.txbStuName.TabIndex = 46;
+            // 
+            // txbStuSurname
+            // 
+            this.txbStuSurname.Location = new System.Drawing.Point(149, 100);
+            this.txbStuSurname.Name = "txbStuSurname";
+            this.txbStuSurname.Size = new System.Drawing.Size(193, 22);
+            this.txbStuSurname.TabIndex = 42;
+            // 
+            // txbStuAddress
+            // 
+            this.txbStuAddress.Location = new System.Drawing.Point(526, 112);
+            this.txbStuAddress.Name = "txbStuAddress";
+            this.txbStuAddress.Size = new System.Drawing.Size(193, 22);
+            this.txbStuAddress.TabIndex = 45;
+            // 
+            // lblStuDOB
+            // 
+            this.lblStuDOB.AutoSize = true;
+            this.lblStuDOB.Location = new System.Drawing.Point(39, 144);
+            this.lblStuDOB.Name = "lblStuDOB";
+            this.lblStuDOB.Size = new System.Drawing.Size(36, 16);
+            this.lblStuDOB.TabIndex = 36;
+            this.lblStuDOB.Text = "DOB";
+            // 
+            // lblStuID
+            // 
+            this.lblStuID.AutoSize = true;
+            this.lblStuID.Location = new System.Drawing.Point(39, 20);
+            this.lblStuID.Name = "lblStuID";
+            this.lblStuID.Size = new System.Drawing.Size(68, 16);
+            this.lblStuID.TabIndex = 39;
+            this.lblStuID.Text = "Student ID";
+            // 
+            // lblStuSurname
+            // 
+            this.lblStuSurname.AutoSize = true;
+            this.lblStuSurname.Location = new System.Drawing.Point(39, 103);
+            this.lblStuSurname.Name = "lblStuSurname";
+            this.lblStuSurname.Size = new System.Drawing.Size(61, 16);
+            this.lblStuSurname.TabIndex = 37;
+            this.lblStuSurname.Text = "Surname";
+            // 
+            // lblStuPhone
+            // 
+            this.lblStuPhone.AutoSize = true;
+            this.lblStuPhone.Location = new System.Drawing.Point(416, 71);
+            this.lblStuPhone.Name = "lblStuPhone";
+            this.lblStuPhone.Size = new System.Drawing.Size(46, 16);
+            this.lblStuPhone.TabIndex = 38;
+            this.lblStuPhone.Text = "Phone";
+            // 
+            // txbStuPhone
+            // 
+            this.txbStuPhone.Location = new System.Drawing.Point(526, 71);
+            this.txbStuPhone.Name = "txbStuPhone";
+            this.txbStuPhone.Size = new System.Drawing.Size(193, 22);
+            this.txbStuPhone.TabIndex = 43;
+            // 
+            // txbStuID
+            // 
+            this.txbStuID.Location = new System.Drawing.Point(149, 20);
+            this.txbStuID.Name = "txbStuID";
+            this.txbStuID.Size = new System.Drawing.Size(193, 22);
+            this.txbStuID.TabIndex = 44;
+            // 
+            // dgvManageStudent
+            // 
+            this.dgvManageStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvManageStudent.Location = new System.Drawing.Point(304, 40);
+            this.dgvManageStudent.Name = "dgvManageStudent";
+            this.dgvManageStudent.RowHeadersWidth = 51;
+            this.dgvManageStudent.RowTemplate.Height = 24;
+            this.dgvManageStudent.Size = new System.Drawing.Size(771, 174);
+            this.dgvManageStudent.TabIndex = 14;
+            this.dgvManageStudent.SelectionChanged += new System.EventHandler(this.dgvManageStudent_SelectionChanged);
+            // 
             // btnDeleteS
             // 
             this.btnDeleteS.Location = new System.Drawing.Point(62, 180);
@@ -101,6 +237,7 @@
             this.btnDeleteS.TabIndex = 13;
             this.btnDeleteS.Text = "Delete Student";
             this.btnDeleteS.UseVisualStyleBackColor = true;
+            this.btnDeleteS.Click += new System.EventHandler(this.btnDeleteS_Click);
             // 
             // btnSearchStudent
             // 
@@ -110,6 +247,7 @@
             this.btnSearchStudent.TabIndex = 11;
             this.btnSearchStudent.Text = "Search";
             this.btnSearchStudent.UseVisualStyleBackColor = true;
+            this.btnSearchStudent.Click += new System.EventHandler(this.btnSearchStudent_Click);
             // 
             // txbSearchStudent
             // 
@@ -147,141 +285,6 @@
             this.pnlManageTop.Size = new System.Drawing.Size(1113, 100);
             this.pnlManageTop.TabIndex = 3;
             // 
-            // cbxGender
-            // 
-            this.cbxGender.FormattingEnabled = true;
-            this.cbxGender.Location = new System.Drawing.Point(526, 20);
-            this.cbxGender.Name = "cbxGender";
-            this.cbxGender.Size = new System.Drawing.Size(193, 24);
-            this.cbxGender.TabIndex = 49;
-            // 
-            // lblStuGender
-            // 
-            this.lblStuGender.AutoSize = true;
-            this.lblStuGender.Location = new System.Drawing.Point(416, 20);
-            this.lblStuGender.Name = "lblStuGender";
-            this.lblStuGender.Size = new System.Drawing.Size(52, 16);
-            this.lblStuGender.TabIndex = 48;
-            this.lblStuGender.Text = "Gender";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(149, 139);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(193, 22);
-            this.dateTimePicker1.TabIndex = 47;
-            // 
-            // txbStuSurname
-            // 
-            this.txbStuSurname.Location = new System.Drawing.Point(149, 100);
-            this.txbStuSurname.Name = "txbStuSurname";
-            this.txbStuSurname.Size = new System.Drawing.Size(193, 22);
-            this.txbStuSurname.TabIndex = 42;
-            // 
-            // lblStuDOB
-            // 
-            this.lblStuDOB.AutoSize = true;
-            this.lblStuDOB.Location = new System.Drawing.Point(39, 144);
-            this.lblStuDOB.Name = "lblStuDOB";
-            this.lblStuDOB.Size = new System.Drawing.Size(36, 16);
-            this.lblStuDOB.TabIndex = 36;
-            this.lblStuDOB.Text = "DOB";
-            // 
-            // lblStuSurname
-            // 
-            this.lblStuSurname.AutoSize = true;
-            this.lblStuSurname.Location = new System.Drawing.Point(39, 103);
-            this.lblStuSurname.Name = "lblStuSurname";
-            this.lblStuSurname.Size = new System.Drawing.Size(61, 16);
-            this.lblStuSurname.TabIndex = 37;
-            this.lblStuSurname.Text = "Surname";
-            // 
-            // txbStuPhone
-            // 
-            this.txbStuPhone.Location = new System.Drawing.Point(526, 71);
-            this.txbStuPhone.Name = "txbStuPhone";
-            this.txbStuPhone.Size = new System.Drawing.Size(193, 22);
-            this.txbStuPhone.TabIndex = 43;
-            // 
-            // txbStuID
-            // 
-            this.txbStuID.Location = new System.Drawing.Point(149, 20);
-            this.txbStuID.Name = "txbStuID";
-            this.txbStuID.Size = new System.Drawing.Size(193, 22);
-            this.txbStuID.TabIndex = 44;
-            // 
-            // lblStuPhone
-            // 
-            this.lblStuPhone.AutoSize = true;
-            this.lblStuPhone.Location = new System.Drawing.Point(416, 71);
-            this.lblStuPhone.Name = "lblStuPhone";
-            this.lblStuPhone.Size = new System.Drawing.Size(46, 16);
-            this.lblStuPhone.TabIndex = 38;
-            this.lblStuPhone.Text = "Phone";
-            // 
-            // lblStuID
-            // 
-            this.lblStuID.AutoSize = true;
-            this.lblStuID.Location = new System.Drawing.Point(39, 20);
-            this.lblStuID.Name = "lblStuID";
-            this.lblStuID.Size = new System.Drawing.Size(68, 16);
-            this.lblStuID.TabIndex = 39;
-            this.lblStuID.Text = "Student ID";
-            // 
-            // txbStuAddress
-            // 
-            this.txbStuAddress.Location = new System.Drawing.Point(526, 112);
-            this.txbStuAddress.Name = "txbStuAddress";
-            this.txbStuAddress.Size = new System.Drawing.Size(193, 22);
-            this.txbStuAddress.TabIndex = 45;
-            // 
-            // txbStuName
-            // 
-            this.txbStuName.Location = new System.Drawing.Point(149, 61);
-            this.txbStuName.Name = "txbStuName";
-            this.txbStuName.Size = new System.Drawing.Size(193, 22);
-            this.txbStuName.TabIndex = 46;
-            // 
-            // lblStuAddress
-            // 
-            this.lblStuAddress.AutoSize = true;
-            this.lblStuAddress.Location = new System.Drawing.Point(416, 112);
-            this.lblStuAddress.Name = "lblStuAddress";
-            this.lblStuAddress.Size = new System.Drawing.Size(58, 16);
-            this.lblStuAddress.TabIndex = 40;
-            this.lblStuAddress.Text = "Address";
-            // 
-            // lblStuName
-            // 
-            this.lblStuName.AutoSize = true;
-            this.lblStuName.Location = new System.Drawing.Point(39, 61);
-            this.lblStuName.Name = "lblStuName";
-            this.lblStuName.Size = new System.Drawing.Size(44, 16);
-            this.lblStuName.TabIndex = 41;
-            this.lblStuName.Text = "Name";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.cbxGender);
-            this.panel1.Controls.Add(this.lblStuName);
-            this.panel1.Controls.Add(this.btnUpdateS);
-            this.panel1.Controls.Add(this.lblStuGender);
-            this.panel1.Controls.Add(this.lblStuAddress);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.txbStuName);
-            this.panel1.Controls.Add(this.txbStuSurname);
-            this.panel1.Controls.Add(this.txbStuAddress);
-            this.panel1.Controls.Add(this.lblStuDOB);
-            this.panel1.Controls.Add(this.lblStuID);
-            this.panel1.Controls.Add(this.lblStuSurname);
-            this.panel1.Controls.Add(this.lblStuPhone);
-            this.panel1.Controls.Add(this.txbStuPhone);
-            this.panel1.Controls.Add(this.txbStuID);
-            this.panel1.Location = new System.Drawing.Point(20, 297);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1055, 237);
-            this.panel1.TabIndex = 50;
-            // 
             // ManageStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,13 +293,14 @@
             this.Controls.Add(this.pnlManageTop);
             this.Name = "ManageStudent";
             this.Size = new System.Drawing.Size(1113, 667);
+            this.Load += new System.EventHandler(this.ManageStudent_Load);
             this.pnlManageContainer.ResumeLayout(false);
             this.pnlManageContainer.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageStudent)).EndInit();
             this.pnlManageTop.ResumeLayout(false);
             this.pnlManageTop.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

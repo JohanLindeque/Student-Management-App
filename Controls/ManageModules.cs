@@ -16,5 +16,22 @@ namespace Project_PRG_282.Controls
         {
             InitializeComponent();
         }
+
+        private void btnSearchModule_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvManageModule_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void ManageModules_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

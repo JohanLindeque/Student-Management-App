@@ -50,6 +50,7 @@
             this.btnAddModule.TabIndex = 36;
             this.btnAddModule.Text = "Add Module";
             this.btnAddModule.UseVisualStyleBackColor = true;
+            this.btnAddModule.Click += new System.EventHandler(this.btnAddModule_Click);
             // 
             // lblModuleDescription
             // 
@@ -152,6 +153,7 @@
             this.Controls.Add(this.pnlCreateMTop);
             this.Name = "AddModule";
             this.Size = new System.Drawing.Size(1113, 667);
+            this.Load += new System.EventHandler(this.AddModule_Load);
             this.pnlCreateMTop.ResumeLayout(false);
             this.pnlCreateMTop.PerformLayout();
             this.ResumeLayout(false);
