@@ -33,7 +33,7 @@
             this.btnAddStudent = new System.Windows.Forms.Button();
             this.cbxGender = new System.Windows.Forms.ComboBox();
             this.lblStuGender = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDOB = new System.Windows.Forms.DateTimePicker();
             this.txbStuSurname = new System.Windows.Forms.TextBox();
             this.lblStuDOB = new System.Windows.Forms.Label();
             this.lblStuSurname = new System.Windows.Forms.Label();
@@ -45,6 +45,11 @@
             this.txbStuName = new System.Windows.Forms.TextBox();
             this.lblStuAddress = new System.Windows.Forms.Label();
             this.lblStuName = new System.Windows.Forms.Label();
+            this.lsbModules = new System.Windows.Forms.ListBox();
+            this.cbxNodules = new System.Windows.Forms.ComboBox();
+            this.btnAddMod = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnRemoveMod = new System.Windows.Forms.Button();
             this.pnlCreateTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,12 +100,12 @@
             this.lblStuGender.TabIndex = 18;
             this.lblStuGender.Text = "Gender";
             // 
-            // dateTimePicker1
+            // dtpDOB
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(515, 264);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(193, 22);
-            this.dateTimePicker1.TabIndex = 17;
+            this.dtpDOB.Location = new System.Drawing.Point(515, 264);
+            this.dtpDOB.Name = "dtpDOB";
+            this.dtpDOB.Size = new System.Drawing.Size(193, 22);
+            this.dtpDOB.TabIndex = 17;
             // 
             // txbStuSurname
             // 
@@ -191,14 +196,63 @@
             this.lblStuName.TabIndex = 11;
             this.lblStuName.Text = "Name";
             // 
+            // lsbModules
+            // 
+            this.lsbModules.FormattingEnabled = true;
+            this.lsbModules.ItemHeight = 16;
+            this.lsbModules.Location = new System.Drawing.Point(862, 316);
+            this.lsbModules.Name = "lsbModules";
+            this.lsbModules.Size = new System.Drawing.Size(174, 84);
+            this.lsbModules.TabIndex = 21;
+            // 
+            // cbxNodules
+            // 
+            this.cbxNodules.FormattingEnabled = true;
+            this.cbxNodules.Location = new System.Drawing.Point(862, 261);
+            this.cbxNodules.Name = "cbxNodules";
+            this.cbxNodules.Size = new System.Drawing.Size(174, 24);
+            this.cbxNodules.TabIndex = 22;
+            // 
+            // btnAddMod
+            // 
+            this.btnAddMod.Location = new System.Drawing.Point(862, 421);
+            this.btnAddMod.Name = "btnAddMod";
+            this.btnAddMod.Size = new System.Drawing.Size(75, 23);
+            this.btnAddMod.TabIndex = 23;
+            this.btnAddMod.Text = "Add";
+            this.btnAddMod.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(862, 239);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Modules";
+            // 
+            // btnRemoveMod
+            // 
+            this.btnRemoveMod.Location = new System.Drawing.Point(943, 421);
+            this.btnRemoveMod.Name = "btnRemoveMod";
+            this.btnRemoveMod.Size = new System.Drawing.Size(75, 23);
+            this.btnRemoveMod.TabIndex = 25;
+            this.btnRemoveMod.Text = "Remove";
+            this.btnRemoveMod.UseVisualStyleBackColor = true;
+            // 
             // CreateStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnRemoveMod);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAddMod);
+            this.Controls.Add(this.cbxNodules);
+            this.Controls.Add(this.lsbModules);
             this.Controls.Add(this.btnAddStudent);
             this.Controls.Add(this.cbxGender);
             this.Controls.Add(this.lblStuGender);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.txbStuSurname);
             this.Controls.Add(this.lblStuDOB);
             this.Controls.Add(this.lblStuSurname);
@@ -228,7 +282,7 @@
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.ComboBox cbxGender;
         private System.Windows.Forms.Label lblStuGender;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDOB;
         private System.Windows.Forms.TextBox txbStuSurname;
         private System.Windows.Forms.Label lblStuDOB;
         private System.Windows.Forms.Label lblStuSurname;
@@ -240,5 +294,10 @@
         private System.Windows.Forms.TextBox txbStuName;
         private System.Windows.Forms.Label lblStuAddress;
         private System.Windows.Forms.Label lblStuName;
+        private System.Windows.Forms.ListBox lsbModules;
+        private System.Windows.Forms.ComboBox cbxNodules;
+        private System.Windows.Forms.Button btnAddMod;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRemoveMod;
     }
 }
