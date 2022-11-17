@@ -15,7 +15,6 @@ namespace Project_PRG_282
 {
     public partial class Login : Form
     {
-        DataHandler
 
         public void switchForm()
         {

@@ -68,6 +68,14 @@ namespace Project_PRG_282.Controls
                 txbStuAddress.Text = dr[7].ToString();
             }
         }
+        public bool Check()
+        {
+            if (txbStuID.Text != null && txbStuName.Text != null && txbStuSurname.Text != null && txbStuPhone.Text != null && txbStuAddress.Text != null && dateTimePicker1.Value != null && cbxGender.SelectedItem != null && txbStuPhone.Text != null)
+            {
+                return true;
+            }
+            return false;
+        }
 
         private void btnSearchStudent_Click(object sender, EventArgs e)
         {
