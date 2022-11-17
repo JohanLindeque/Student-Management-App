@@ -71,7 +71,6 @@
             this.pnlManageContainer.Name = "pnlManageContainer";
             this.pnlManageContainer.Size = new System.Drawing.Size(1113, 576);
             this.pnlManageContainer.TabIndex = 6;
-            
             // 
             // rtbModDesc
             // 
@@ -157,6 +156,7 @@
             this.btnUpdateM.TabIndex = 13;
             this.btnUpdateM.Text = "Update Module";
             this.btnUpdateM.UseVisualStyleBackColor = true;
+            this.btnUpdateM.Click += new System.EventHandler(this.btnUpdateM_Click);
             // 
             // btnDeleteM
             // 
@@ -166,6 +166,7 @@
             this.btnDeleteM.TabIndex = 13;
             this.btnDeleteM.Text = "Delete Module";
             this.btnDeleteM.UseVisualStyleBackColor = true;
+            this.btnDeleteM.Click += new System.EventHandler(this.btnDeleteM_Click);
             // 
             // btnSearchModule
             // 
