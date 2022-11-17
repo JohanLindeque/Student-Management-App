@@ -24,18 +24,13 @@ namespace Project_PRG_282.Controls
             txbModuleLink.Clear();
         }
 
-        public void check()
+        public bool check()
         {
             if (txbModuleCode.Text != null && txbModuleName.Text != null && rtbModuleDes.Text != null && txbModuleLink.Text != null)
             {
-                mod = new Module(txbModuleCode.Text, txbModuleName.Text, rtbModuleDes.Text, txbModuleLink.Text);
-                handler.AddModule(mod);
-                clearinputs();
+                return true;
             }
-            else
-            {
-                MessageBox.Show("Ensure all fields have a valid input.");
-            }
+            return false;
         }
 
         public AddModule()
@@ -43,14 +38,18 @@ namespace Project_PRG_282.Controls
             InitializeComponent();
         }
 
-        private void AddModule_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAddModule_Click(object sender, EventArgs e)
         {
-            check();
+            if (check())
+            {
+                mod = new Module(txbModuleCode.Text, txbModuleName.Text, rtbModuleDes.Text, txbModuleLink.Text);
+                handler.AddModule(mod);
+            }
+            else
+            {
+                MessageBox.Show("Ensure all fields have a valid input.");
+            }
+            clearinputs();
         }
     }
 }

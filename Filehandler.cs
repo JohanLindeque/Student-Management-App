@@ -10,7 +10,7 @@ namespace Project_PRG_282
 {
     internal class Filehandler
     {
-        static string thePath = @"../users.txt";
+        static string thePath = @"\users.txt";
         StreamReader sr;
         public static string[] myusers;
         
