@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Project_PRG_282
 {
@@ -11,18 +12,27 @@ namespace Project_PRG_282
     {
         static string thePath = @"../users.txt";
         public static string[] myusers;
+        FileStream fs;
+        StreamWriter sw;
+        StreamReader sr;
         
         public static void WritUser(string newUser)
         {
             try
             {
-                File.AppendAllText(thePath, newUser);
+                using(fs = new FileStream(path, FileMode.Append, FileAccess.Write))
+                {
+                    using(sw = new StreamWriter(fs))
+                    {
+                        sw.WriteLine(newUser)
+                    }
+                }
 
             }
             catch (Exception e)
             {
 
-                System.Windows.Forms.MessageBox.Show(e.Message);
+                MessageBox.Show(e.Message);
             }
         }
 
@@ -36,7 +46,7 @@ namespace Project_PRG_282
             catch (Exception e)
             {
 
-                System.Windows.Forms.MessageBox.Show(e.Message);
+                MessageBox.Show(e.Message);
             }
         }
 
