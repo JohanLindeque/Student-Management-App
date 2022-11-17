@@ -289,6 +289,10 @@ namespace Project_PRG_282
                     bs.DataSource = reader;
 
                 }
+                else
+                {
+                    bs.Clear();
+                }
                 reader.Close();
                 string number1 = "";
                 string number2 = "";
