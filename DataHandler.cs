@@ -1,16 +1,15 @@
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
-using System.Reflection.Emit;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project_practice
+namespace Project_PRG_282
 {
     internal class DataHandler
     {
@@ -88,7 +87,6 @@ namespace Project_practice
 
         public void UpdateStudent(Student st)
         {
-            SqlDataReader reader;
             try
             {
                 cmd = new SqlCommand("UpdateStudent", conn);

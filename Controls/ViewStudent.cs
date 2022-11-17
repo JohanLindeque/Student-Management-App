@@ -12,16 +12,16 @@ namespace Project_PRG_282.Controls
 {
     public partial class ViewStudent : UserControl
     {
+        
+
         public ViewStudent()
         {
             InitializeComponent();
         }
 
-       
-
         private void ViewStudent_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = 
         }
     }
 }
