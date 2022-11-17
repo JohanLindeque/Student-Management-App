@@ -20,7 +20,7 @@ namespace Project_PRG_282
         {
             try
             {
-                using(fs = new FileStream(path, FileMode.Append, FileAccess.Write))
+                using(fs = new FileStream(thePath, FileMode.Append, FileAccess.Write))
                 {
                     using(sw = new StreamWriter(fs))
                     {
