@@ -1,40 +1,60 @@
 # Project_PRG_282
 
-You need to create an initial menu for the Data Capturer who will use
-this application. The Data Capturer should be presented with a Login
-Form which will require their Username and Password. All Usernames
-and Passwords must be stored on a text file [in any format of your
-choosing]. The login should be verified and authenticated when a Data
-Capturer attempts to login. If a Data Capturer does not have a
-Username and Password, they should be able to register as a new user
-and their login details stored on the text file. Make sure all necessary
-validations are done for the Login Form.
-2) Once the Data Capturer logs on the application, they should be
-presented with a Windows GUI to perform all CRUD operations. Utilize
-ADO.Net to achieve this. All information MUST be stored on a database
-using SQL Server.
-3) When capturing student information, on Create, the application should
-capture the following student information to the database:
-▪ Student Number
-▪ Student Name and Surname
-▪ Student Image
-▪ DOB
-▪ Gender
-▪ Phone
-▪ Address
-▪ Module Codes
-4) On Read, make sure student information can be displayed in a ListView
-or DataGridView. Update, it must be possible to change student’s
-information. On Delete, it must be possible to delete a student’s
-information. The application must also have a Search functionality to
-search a particular student’s information using the Student’s ID.
-5) When capturing module information, on Create, the application should
-capture the following module information to the database:
-▪ Module Code
-▪ Module Name
-▪ Module Description
-▪ Links to particular online resources (use YouTube videos that
-relate to each module)
-6) The rest of the other CRUD operations must apply for displaying,
-updating, deleting and searching for a module to and from the
-database
+Welcome to Project_PRG_282, a Data Capturer application designed to manage student and module information efficiently.
+
+## Features
+
+1. **User Authentication**
+   - A user-friendly login form requiring a Username and Password.
+   - User credentials stored securely in a text file (in any format you prefer).
+   - Rigorous validation to ensure a secure login process.
+   - New users can register, with their login details stored in the text file.
+
+2. **Windows GUI for CRUD Operations**
+   - A user-friendly Windows GUI for Data Capturers.
+   - Utilizes ADO.Net for seamless interaction with the database.
+   - All data is stored and managed in an SQL Server database.
+
+3. **Student Information**
+   - Create: Capture and store comprehensive student information, including:
+     - Student Number
+     - Student Name and Surname
+     - Student Image
+     - Date of Birth (DOB)
+     - Gender
+     - Phone
+     - Address
+     - Module Codes
+
+4. **Student Information Management**
+   - Read: Display student information in a ListView or DataGridView.
+   - Update: Modify student information as needed.
+   - Delete: Easily remove a student's information.
+   - Search: Quickly find a specific student's details using their Student ID.
+
+5. **Module Information**
+   - Create: Capture and store essential module information, including:
+     - Module Code
+     - Module Name
+     - Module Description
+     - Links to relevant online resources (utilizing YouTube videos for module content).
+
+6. **Module Information Management**
+   - Read: Display module information clearly in a ListView or DataGridView.
+   - Update: Edit module details seamlessly.
+   - Delete: Remove module information when necessary.
+   - Search: Effortlessly locate modules using their unique Module Code.
+
+## Getting Started
+
+1. Clone or download this repository to your local machine.
+
+2. Set up an SQL Server database and ensure the database connection string in the application code is correctly configured.
+
+3. Run the application, and follow the on-screen instructions to either log in with your credentials or register as a new user.
+
+4. Use the intuitive Windows GUI to perform all CRUD operations for both student and module information.
+
+## Dependencies
+
+This application relies on ADO.Net for database interactions and requires access to an SQL Server
